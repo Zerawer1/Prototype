@@ -41,11 +41,11 @@ var profileCatalog = new Dictionary<string, UserProfile>
 - **Производительность**: если создание объекта «дорого» (например, загрузка данных из БDI), клонирование может быть быстрее.
 
 ## Структура проекта
-- `PrototypeDemo/Program.cs` — точка входа приложения (`Main`) и демонстрационный сценарий паттерна Prototype
-- `PrototypeDemo/UserProfile.cs` — профиль пользователя и операции `ShallowClone()` / `DeepClone()`
-- `PrototypeDemo/Preferences.cs` — пользовательские настройки
-- `PrototypeDemo/NotificationSettings.cs` — настройки уведомлений
-- `PrototypeDemo/Theme.cs` — перечисление тем оформления
+- `Program.cs` — точка входа приложения (`Main`) и демонстрационный сценарий паттерна Prototype
+- `UserProfile.cs` — профиль пользователя и операции `ShallowClone()` / `DeepClone()`
+- `Preferences.cs` — пользовательские настройки
+- `NotificationSettings.cs` — настройки уведомлений
+- `Theme.cs` — перечисление тем оформления
 
 ## Технологии
 - `.NET 9`
