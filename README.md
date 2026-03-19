@@ -40,8 +40,13 @@ var profileCatalog = new Dictionary<string, UserProfile>
 - **Снижение ошибок**: автоматическое копирование полей через `Clone()` уменьшает риск что-то забыть.
 - **Производительность**: если создание объекта «дорого» (например, загрузка данных из БDI), клонирование может быть быстрее.
 
-## Структура (минимальная)
-- `Program.cs`
-  - `UserProfile` — профиль пользователя (прототип)
-  - `Preferences`, `NotificationSettings` — вложенные настройки
-  - `ShallowClone()` / `DeepClone()` — два варианта клонирования
+## Структура проекта
+- `PrototypeDemo/Program.cs` — точка входа приложения (`Main`) и демонстрационный сценарий паттерна Prototype
+- `PrototypeDemo/UserProfile.cs` — профиль пользователя и операции `ShallowClone()` / `DeepClone()`
+- `PrototypeDemo/Preferences.cs` — пользовательские настройки
+- `PrototypeDemo/NotificationSettings.cs` — настройки уведомлений
+- `PrototypeDemo/Theme.cs` — перечисление тем оформления
+
+## Технологии
+- `.NET 9`
+- `C#`
